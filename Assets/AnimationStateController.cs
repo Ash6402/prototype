@@ -36,19 +36,19 @@ public class AnimationStateController : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        var walk = _moveAction.ReadValue<Vector2>().y;
-        var run = _runAction.ReadValue<float>();
-        if(walk.Equals(1) && run.Equals(1)){
-            animator.SetBool(_run, true);
-        }else if(walk.Equals(1) && !run.Equals(1))
-        {
-            animator.SetBool(_walk, true);
-            animator.SetBool(_run, false);
-        }
-        else
-        {
-            animator.SetBool(_run, false);
-            animator.SetBool(_walk, false);
-        }
+        // var walk = _moveAction.ReadValue<Vector2>().y;
+        // var run = _runAction.ReadValue<float>();
+        // if(walk.Equals(1) && run.Equals(1)){
+        //     animator.SetBool(_run, true);
+        // }else if(walk.Equals(1) && !run.Equals(1))
+        // {
+        //     animator.SetBool(_walk, true);
+        //     animator.SetBool(_run, false);
+        // }
+        // else
+        // {
+        //     animator.SetBool(_run, false);
+        //     animator.SetBool(_walk, false);
+        // }
     }
 }
